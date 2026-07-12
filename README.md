@@ -13,16 +13,23 @@ class SysCommand(Enum):
 
 - *System Interfaces* This is a class that can be called by the System Processes to interact with the world outside of the kernel. This could be an external API service, a database, or a file system. 
 
+## License
+BSD-3-Clause
+
 ## Installation
 
 ### Claude Code
 
-Kernel-based is available via the official Claude plugin marketplace
+Claude Code only looks one level deep for `SKILL.md` files, so each skill folder must be directly under the skills directory. Clone the repo somewhere, then symlink the skills:
 
-#### Official Marketplace
+```bash
+# Clone to a convenient location
+git clone https://github.com/ShariqT/kernel-based ~/kernel-based
 
-- Install the plugin from Anthropic's official marketplace:
+# Symlink individual skills (user-level)
+mkdir -p ~/.claude/skills
+ln -s ~/kernel-based/skills/developer ~/.claude/skills/kernel-developer
 
-  ```bash
-  /plugin install kernel-based@claude-plugins-official
-  ```
+# Or project-level
+mkdir -p .claude/skills
+ln -s ~/kernel-based/skills/developer .claude/skills/kernel-developer
