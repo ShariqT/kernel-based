@@ -33,3 +33,4 @@ ln -s ~/kernel-based/skills/developer ~/.claude/skills/kernel-developer
 # Or project-level
 mkdir -p .claude/skills
 ln -s ~/kernel-based/skills/developer .claude/skills/kernel-developer
+```
