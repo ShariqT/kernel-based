@@ -34,3 +34,13 @@ ln -s ~/kernel-based/skills/developer ~/.claude/skills/kernel-developer
 mkdir -p .claude/skills
 ln -s ~/kernel-based/skills/developer .claude/skills/kernel-developer
 ```
+
+### Skills.sh
+
+You can install via the Skills.sh CLI.
+
+```bash
+npx skills add ShariqT/kernel-based
+
+bunx skills add ShariqT/kernel-based
+```
