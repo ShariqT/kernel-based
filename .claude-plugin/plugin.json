@@ -1,0 +1,8 @@
+{
+  "name": "kernel-based",
+  "description": "Follows the kernel-based development paradigm. Read more at https://www.kernel-based.dev/learn/",
+  "version": "1.0.0",
+  "author": {
+    "name": "Shariq Torres"
+  }
+}
