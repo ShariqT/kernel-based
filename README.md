@@ -4,10 +4,10 @@ Kernel-based development is a software engineering practice that delivers focuse
 
 Kernels are composed of the following: 
 - *System Commands* This an enum with a description of the command. An example in Python would be 
-'''python
+```python
 class SysCommand(Enum):
-    TEST = 1
-'''
+    ADD_NUMBERS = 1
+```
 
 - *System Processes* This is function that is internally mapped to a System Command. This function returns an *Exit* class with an *ExitCode* that tells the consuming code if the System Command failed or succeeded. 
 
